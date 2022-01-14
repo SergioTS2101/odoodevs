@@ -9,7 +9,7 @@
     Sencilla lista de tareas utilizadas para crear un nuevo módulo con un nuevo modelo de datos
     """,
 
-    'author': "Miguel y Sergio",
+    'author': "Sergio y Miguel",
     'website': "https://www.youtube.com/watch?v=16y1AkoZkmQ",
     #Indicamos que es una aplicación
     'application': True,
