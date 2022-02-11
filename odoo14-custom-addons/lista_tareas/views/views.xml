@@ -32,16 +32,20 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Hola" id="lista_tareas.menu_root"/>
+    <menuitem name="lista_tareas" id="lista_tareas.menu_root"/>
 
     <!-- menu categories -->
 
-    <menuitem name="Quiero un " id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
+    <menuitem name="Users" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
+    <menuitem name="Group" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
+
+    <!-- new menu entries -->
+    <menuitem name="Community" id="lista_tareas.menu_3" parent="lista_tareas.menu_root"/>
+    <menuitem name="Local" id="lista_tareas.menu_2_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
+    <menuitem name="Global" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
 
     <!-- actions -->
-
-    <menuitem name="10" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1"
-              action="lista_tareas.action_window"/>
-
+    <menuitem name="List" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1" action="lista_tareas.action_window"/>
+    <menuitem name="Server to list" id="lista_tareas" parent="lista_tareas.menu_2" action="lista_tareas.action_server"/>
   </data>
 </odoo>
