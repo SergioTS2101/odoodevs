@@ -8,10 +8,12 @@
       <field name="model">lista_tareas.lista_tareas</field>
       <field name="arch" type="xml">
         <tree>
+          <field name = "avatar" widget = "image" class = "oe_avatar"/>
           <field name="tarea"/>
           <field name="prioridad"/>
           <field name="urgente"/>
           <field name="realizada"/>
+          <field name = "fecha"/>
         </tree>
       </field>
     </record>
@@ -46,6 +48,7 @@
 
     <!-- actions -->
     <menuitem name="List" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1" action="lista_tareas.action_window"/>
-    <menuitem name="Server to list" id="lista_tareas" parent="lista_tareas.menu_2" action="lista_tareas.action_server"/>
+    <!--<menuitem name="Server to list" id="lista_tareas" parent="lista_tareas.menu_2" action="lista_tareas.action_server"/>
+    -->
   </data>
 </odoo>
