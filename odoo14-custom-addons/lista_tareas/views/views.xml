@@ -25,7 +25,7 @@
     -->
 
     <record model="ir.actions.act_window" id="lista_tareas.action_window">
-      <field name="name">Listado de tareas pendientes</field>
+      <field name="name">Sergio Tomeo Samuel</field>
       <field name="res_model">lista_tareas.lista_tareas</field>
       <field name="view_mode">tree,form</field>
     </record>
