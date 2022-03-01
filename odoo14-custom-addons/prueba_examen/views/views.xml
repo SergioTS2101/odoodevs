@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="prueba_examen.list">
       <field name="name">pruebaExamen list</field>
       <field name="model">prueba_examen.prueba_examen</field>
@@ -10,22 +10,26 @@
           <field name="name"/>
           <field name="value"/>
           <field name="value2"/>
+          <field name="pepe"/>
+          <field name="sergio"/>
+          <field name="guarni"/>
+          <field name="description"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="prueba_examen.action_window">
       <field name="name">pruebaExamen window</field>
       <field name="res_model">prueba_examen.prueba_examen</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
+
     <record model="ir.actions.server" id="prueba_examen.action_server">
       <field name="name">pruebaExamen server</field>
       <field name="model_id" ref="model_prueba_examen_prueba_examen"/>
@@ -38,23 +42,32 @@
         }
       </field>
     </record>
--->
+
 
     <!-- Top menu item -->
-<!--
+
     <menuitem name="pruebaExamen" id="prueba_examen.menu_root"/>
--->
+
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="prueba_examen.menu_1" parent="prueba_examen.menu_root"/>
-    <menuitem name="Menu 2" id="prueba_examen.menu_2" parent="prueba_examen.menu_root"/>
--->
+
+    <menuitem name="Sergio" id="prueba_examen.menu_1" parent="prueba_examen.menu_root"/>
+    <menuitem name="Pepe" id="prueba_examen.menu_2" parent="prueba_examen.menu_root"/>
+    <menuitem name="Guarni" id="prueba_examen.menu_3" parent="prueba_examen.menu_root"/>
+
     <!-- actions -->
-<!--
-    <menuitem name="List" id="prueba_examen.menu_1_list" parent="prueba_examen.menu_1"
+
+    <menuitem name="Tomeo" id="prueba_examen.menu_1_list" parent="prueba_examen.menu_1"
+              action="prueba_examen.action_window"/>
+    <menuitem name="Samuel" id="prueba_examen.menu_2_list" parent="prueba_examen.menu_1"
+              action="prueba_examen.action_window"/>
+    <menuitem name="Ávila" id="prueba_examen.menu_3_list" parent="prueba_examen.menu_2"
+              action="prueba_examen.action_window"/>
+    <menuitem name="Rustarazo" id="prueba_examen.menu_4_list" parent="prueba_examen.menu_2"
+              action="prueba_examen.action_window"/>
+    <menuitem name="Notario" id="prueba_examen.menu_5_list" parent="prueba_examen.menu_3"
               action="prueba_examen.action_window"/>
     <menuitem name="Server to list" id="prueba_examen" parent="prueba_examen.menu_2"
               action="prueba_examen.action_server"/>
--->
+
   </data>
 </odoo>
